@@ -33,7 +33,7 @@ run:
 		-e ITC_PASSWORD=${ITC_PASSWORD} \
 		-e ITC_APP_ID=${ITC_APP_ID} \
 		-e ITC_APP_TESTER_GROUPS="${ITC_APP_TESTER_GROUPS}" \
-		-p 3000:3000 \
+		-p 3002:3002 \
 		--name $(RUN_NAME) \
 		$(DOCKER_IMAGE):$(VERSION)
 
