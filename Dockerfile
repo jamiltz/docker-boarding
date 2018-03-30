@@ -22,4 +22,4 @@ RUN mkdir -p boarding && cd boarding \
  && bundle install
 
 WORKDIR /boarding
-CMD bundle exec puma -C config/puma.rb -p 3002
+CMD bundle exec puma -C config/puma.rb -p 4000

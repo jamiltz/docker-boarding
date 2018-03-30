@@ -33,7 +33,7 @@ run:
 		-e ITC_PASSWORD=${ITC_PASSWORD} \
 		-e ITC_APP_ID=${ITC_APP_ID} \
 		-e ITC_APP_TESTER_GROUPS="${ITC_APP_TESTER_GROUPS}" \
-		-p 3002:3002 \
+		-p 4000:4000 \
 		--name $(RUN_NAME) \
 		$(DOCKER_IMAGE):$(VERSION)
 
@@ -42,7 +42,7 @@ run-debug:
 		-e ITC_USER=${ITC_USER} \
 		-e ITC_PASSWORD=${ITC_PASSWORD} \
 		-e ITC_APP_ID=${ITC_APP_ID} \
-		-p 3002:3002 \
+		-p 4000:4000 \
 		--name $(RUN_NAME)
 		$(DOCKER_IMAGE):$(VERSION) \
 		tail -f /dev/null
